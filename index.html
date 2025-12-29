@@ -2,33 +2,18 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Einstiegspunkt</title>
+  <title>Language selection</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Willkommen</h1>
+  <h1>LANGUAGE SELECTION</h1>
 
-  <p>Willkommen zu diesem interaktiven Archiv. Entdecke die Ebenen.</p>
+  <p>Here you can choose your language.</p>
 
   <ul class="nav">
-    <li><a href="../index.html">Zurück zur Sprachauswahl</a></li>
-    <li><a href="layer1/index.html">Zu Layer 1</a></li>
-    <li><a href="nodes/node_a.html">Zu Knoten A</a></li>
-    <li><a href="sitemap.html">Seitenkarte</a></li>
+    <li><a href="de/index.html">Deutsch</a></li>
+    <li><a href="en/index.html">English</a></li>
+    <li><a href="#emptylanguage1">Empty Language</a></li>
   </ul>
-
-  <!-- Hidden Easter Egg: Click this text 3 times to reveal secret -->
-  <p id="secret-trigger" style="cursor:pointer;">Klick mich, wenn es dich interessiert...</p>
-
-  <script>
-    let clicks = 0;
-    document.getElementById('secret-trigger').addEventListener('click', () => {
-      clicks++;
-      if(clicks === 3){
-        alert("Geheimnis freigeschaltet! Du kannst jetzt die versteckten Layer betreten.");
-        window.location.href = 'secrets/secret1.html';
-      }
-    });
-  </script>
 </body>
 </html>
