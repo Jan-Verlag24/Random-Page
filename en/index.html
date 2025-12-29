@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Entry Point</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>WELCOME</h1>
+
+  <p>Welcome to the interactive archive. Explore the layers.</p>
+
+  <ul class="nav">
+    <li><a href="../index.html">Go Back to language selection</a></li>
+    <li><a href="layer1/index.html">Enter Layer 1</a></li>
+    <li><a href="nodes/node_a.html">Explore Node A</a></li>
+    <li><a href="sitemap.html">Sitemap</a></li>
+  </ul>
+
+  <!-- Hidden Easter Egg: Click this text 3 times to reveal secret -->
+  <p id="secret-trigger" style="cursor:pointer;">Click me if you are curious...</p>
+
+  <script>
+    let clicks = 0;
+    document.getElementById('secret-trigger').addEventListener('click', () => {
+      clicks++;
+      if(clicks === 3){
+        alert("Secret unlocked! You can now access the hidden layer.");
+        window.location.href = 'secrets/secret1.html';
+      }
+    });
+  </script>
+</body>
+</html>
